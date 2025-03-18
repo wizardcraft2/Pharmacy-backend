@@ -1,12 +1,14 @@
 import express from 'express';
 import http from 'http';
-
+import dotenv from 'dotenv';
 import mongoose from 'mongoose';
 import morgan from 'morgan';
 import cors from 'cors';
 import homeRouter from './routes/home.js';
 import tradesRouter from './routes/trande_names.js';
 import ingredientsRouter from './routes/ingredients.js';
+
+dotenv.config();
 
 const app = express();
 const server = http.createServer(app);
