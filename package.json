@@ -1,0 +1,31 @@
+{
+  "name": "drug-backend",
+  "version": "1.0.0",
+  "type": "module",
+  "engines": {
+    "node": ">=18.0.0"
+  },
+  "main": "src/app.js",
+  "scripts": {
+    "start": "node --no-warnings src/app.js",
+    "dev": "nodemon --no-warnings src/app.js"
+  },
+  "dependencies": {
+    "@opentelemetry/auto-instrumentations-node": "^0.40.2",
+    "@opentelemetry/exporter-jaeger": "^1.15.2",
+    "@opentelemetry/resources": "^1.15.2",
+    "@opentelemetry/sdk-trace-base": "^1.15.2",
+    "@opentelemetry/semantic-conventions": "^1.15.2",
+    "cors": "^2.8.5",
+    "dotenv": "^16.0.3",
+    "express": "^4.18.2",
+    "mongoose": "^7.0.0",
+    "morgan": "^1.10.0",
+    "mysql": "^2.18.1",
+    "mysql2": "^3.13.0",
+    "tracing": "^0.0.0"
+  },
+  "devDependencies": {
+    "nodemon": "^3.1.9"
+  }
+}
